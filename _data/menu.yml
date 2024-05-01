@@ -1,2 +1,16 @@
-entries:
-  - title: category 
+categories:
+    - name: Books
+      url: test
+      items:
+          - title: 'The Great Gatsby'
+            url: 'F. Scott Fitzgerald'
+          - title: 'To Kill a Mockingbird'
+            url: 'Harper Lee'
+    - name: Movies
+      url: test
+      items:
+          - title: 'Inception'
+            url: 'Christopher Nolan'
+          - title: 'The Shawshank Redemption'
+            url: 'Frank Darabont'
+      last: true
