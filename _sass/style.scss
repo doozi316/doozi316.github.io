@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: '굴림체';
-    font-size: 14pt;
+    font-size: 1rem;
 }
 
 header {
@@ -51,5 +51,59 @@ main {
     .main-img {
         max-width: 500px;
         width: 80%;
+    }
+}
+
+.profile {
+    border: 1px solid red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > .profile-content {
+        display: flex;
+
+        > .image {
+            > img {
+                width: 100px;
+            }
+        }
+
+        > .text {
+            font-size: 14px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            li {
+                margin: 6px;
+            }
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+}
+
+.category {
+    border: 1px solid red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > .menu-list {
+        border: 1px solid blue;
     }
 }
