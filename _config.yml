@@ -7,3 +7,9 @@ date_format: '%Y-%m-%d'
 
 plugins:
     - jekyll-toc
+
+defaults:
+    - scope:
+          path: '_posts'
+      values:
+          toc: true

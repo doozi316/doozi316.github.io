@@ -63,7 +63,18 @@ td {
     padding: 0.4rem;
 }
 
+script {
+    table,
+    th,
+    td {
+        border: unset !important;
+        border-collapse: unset;
+        padding: unset;
+    }
+}
+
 code {
+    padding: 1px 4px 1px 2px;
     color: white;
     background: black;
 }
@@ -216,7 +227,6 @@ main {
 
 .post-list {
     flex: 1;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,19 +237,21 @@ main {
     display: flex;
 
     > .nav {
-        padding: 10px;
+        padding: 10px 0px 10px 30px !important;
         box-shadow: inset -1px 0px #808080, inset 1px 1px #ffffff,
             inset -2px 0px #808080, inset 2px 2px #dfdfdf;
         width: 20%;
-        max-width: 25rem;
+        max-width: 20rem;
 
         ul {
             position: -webkit-sticky; /* 사파리 브라우저 지원 */
             position: sticky;
             top: 1rem;
-        }
-        li {
-            margin: 0;
+            padding: 5px 1rem;
+
+            li {
+                margin: 0;
+            }
         }
     }
 
