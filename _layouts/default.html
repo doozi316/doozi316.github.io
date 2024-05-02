@@ -3,26 +3,16 @@
   {%- include head.html -%}
   <body>
     <header>
-        <div class="pre">
+        <div class="pre-item">
             <a href="/">Home</a>
         </div>
-        <div class="post">
-            <a class="post-item" href="category">category</a>
-            <a class="post-item" href="profile">profile</a>
+        <div class="post-item">
+            <a href="/category">category</a>
+            <a href="/profile">profile</a>
         </div>
     </header>
     <main>
         {{ content }}
     </main>
-
-    <!-- {%-if site.goat_counter and jekyll.environment == "production"-%}
-      {%-include goat_counter.html-%}
-    {%-endif-%}
-
-    {% if page.custom_js %}
-      {% for js_file in page.custom_js %}
-        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
-      {% endfor %}
-    {% endif %} -->
   </body>
 </html>

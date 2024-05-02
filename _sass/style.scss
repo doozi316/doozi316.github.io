@@ -35,10 +35,10 @@ header {
         color: black;
     }
 
-    > .post {
+    > .post-item {
         display: flex;
 
-        .post-item {
+        > a {
             padding-left: 3rem;
         }
     }
@@ -129,5 +129,37 @@ main {
             margin: 0.5rem 0;
             padding: 0;
         }
+    }
+}
+
+.post-list {
+    flex: 1;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    flex: 1;
+    display: flex;
+
+    > .nav {
+        --window-frame: #808080;
+        --button-highlight: #ffffff;
+        --button-shadow: #808080;
+        --button-face: #dfdfdf;
+
+        --border-raised-outer: inset -1px -1px #808080, inset 1px 1px #ffffff;
+
+        --border-raised-inner: inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+
+        box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+        width: 20%;
+    }
+
+    > .content {
+        width: 80%;
+        word-break: break-all;
     }
 }

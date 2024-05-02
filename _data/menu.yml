@@ -1,16 +1,13 @@
 categories:
-    - name: Books
-      url: test
+    - name: JAVA
+      url: /category/java.html
+    - name: Database
+      url: /category/java.html
       items:
-          - title: 'The Great Gatsby'
-            url: 'F. Scott Fitzgerald'
-          - title: 'To Kill a Mockingbird'
-            url: 'Harper Lee'
-    - name: Movies
-      url: test
-      items:
-          - title: 'Inception'
-            url: 'Christopher Nolan'
-          - title: 'The Shawshank Redemption'
-            url: 'Frank Darabont'
+          - title: PostgreSQL
+            url: /category/postgreSQL.html
+    - name: AWS
+      url: /category/aws.html
+    - name: Docker
+      url: /category/docker.html
       last: true

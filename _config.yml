@@ -1,4 +1,9 @@
 lang: ko
-title: nini's logs
+title: doozi's logs
 email: doozi316@gmail.com
 github: https://github.com/doozi316
+favicon: 'favicon.png'
+date_format: '%Y-%m-%d'
+
+plugins:
+    - jekyll-toc
