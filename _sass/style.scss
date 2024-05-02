@@ -7,6 +7,88 @@ body {
     margin: 0;
     font-family: '굴림체';
     font-size: 1rem;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+}
+
+.post-meta {
+    text-align: right;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 3rem;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+li {
+    margin: 0.4rem 0;
+}
+
+*:target {
+    background: yellow;
+}
+
+hr {
+    text-align: center;
+    border: 0;
+
+    &:before {
+        content: '=====';
+    }
+    &:after {
+        content: attr(data-content) '=====';
+    }
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: thin solid black;
+    border-collapse: collapse;
+    padding: 0.4rem;
+}
+
+code {
+    color: white;
+    background: black;
+}
+
+div.highlighter-rouge code {
+    display: block;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    padding: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+    border: thin solid black;
+    padding: 1rem;
+
+    p {
+        margin: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 a {
@@ -145,21 +227,38 @@ main {
     display: flex;
 
     > .nav {
-        --window-frame: #808080;
-        --button-highlight: #ffffff;
-        --button-shadow: #808080;
-        --button-face: #dfdfdf;
-
-        --border-raised-outer: inset -1px -1px #808080, inset 1px 1px #ffffff;
-
-        --border-raised-inner: inset -2px -2px #808080, inset 2px 2px #dfdfdf;
-
-        box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+        padding: 10px;
+        box-shadow: inset -1px 0px #808080, inset 1px 1px #ffffff,
+            inset -2px 0px #808080, inset 2px 2px #dfdfdf;
         width: 20%;
+        max-width: 25rem;
+
+        ul {
+            position: -webkit-sticky; /* 사파리 브라우저 지원 */
+            position: sticky;
+            top: 1rem;
+        }
+        li {
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .nav {
+            display: none;
+        }
     }
 
     > .content {
         width: 80%;
-        word-break: break-all;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .content {
+            flex: 1;
+        }
     }
 }
