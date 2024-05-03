@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 html,
 body {
     width: 100%;
@@ -15,11 +17,13 @@ body {
     text-align: right;
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+    font-family: 'Noto Sans KR', sans-serif;
     margin-top: 3rem;
 }
 
@@ -237,20 +241,67 @@ main {
     display: flex;
 
     > .nav {
-        padding: 10px 0px 10px 30px !important;
         box-shadow: inset -1px 0px #808080, inset 1px 1px #ffffff,
             inset -2px 0px #808080, inset 2px 2px #dfdfdf;
         width: 20%;
-        max-width: 20rem;
+        max-width: 25rem;
 
-        ul {
-            position: -webkit-sticky; /* 사파리 브라우저 지원 */
+        > .sticky-nav {
             position: sticky;
-            top: 1rem;
-            padding: 5px 1rem;
+            top: 0px;
+            border-top: 1px solid rgb(204, 204, 204);
 
-            li {
-                margin: 0;
+            > .tab {
+                margin: 2px;
+                display: flex;
+
+                > button {
+                    background: linear-gradient(
+                        rgb(250, 250, 251),
+                        rgb(220, 220, 220)
+                    );
+                    font-family: '굴림';
+                    font-size: 12px;
+                    flex: 1;
+                    border: none;
+                    border-bottom: 2px solid rgb(204, 204, 204);
+                    box-shadow: 0 1.5px rgb(153, 153, 153),
+                        0 -1.5px rgb(255, 255, 255);
+                    outline: none;
+                    cursor: pointer;
+                    padding: 0.8rem 1rem;
+
+                    &:hover {
+                        background-color: #ddd;
+                    }
+                }
+
+                > button.active {
+                    font-weight: bold;
+                    background: linear-gradient(
+                        rgb(216, 216, 216),
+                        rgb(220, 220, 220)
+                    );
+                }
+            }
+
+            > .tabcontent {
+                padding: 0.5rem 2.3rem;
+
+                ul {
+                    padding-right: 0;
+                }
+            }
+
+            ul {
+                position: -webkit-sticky; /* 사파리 브라우저 지원 */
+                position: sticky;
+                top: 1rem;
+                padding: 5px 1rem;
+
+                li {
+                    margin: 0;
+                }
             }
         }
     }
