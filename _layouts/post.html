@@ -20,21 +20,21 @@ layout: default
                     다른 글
                 </button>
             </div>
-    
+
             <div
                 id="Tab1"
                 class="tabcontent"
             >
-                {% toc %}
+                {%- toc -%}
             </div>
-    
+
             <div
                 id="Tab2"
                 class="tabcontent"
             >
-                {% assign category = page.category %} {% if condition %} {% assign
-                category_title=page.category_title %} {% else %} {% assign
-                category_title=page.category %} {% endif %} {%-include
+                {% assign category = page.category %} {% if condition %} {%
+                assign category_title=page.category_title %} {% else %} {%
+                assign category_title=page.category %} {% endif %} {%-include
                 post-list.html-%}
             </div>
         </div>
