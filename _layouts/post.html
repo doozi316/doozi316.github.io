@@ -25,7 +25,7 @@ layout: default
                 id="Tab1"
                 class="tabcontent"
             >
-                {{ content | toc_only }}
+                {% include toc.html html=content %}
             </div>
 
             <div

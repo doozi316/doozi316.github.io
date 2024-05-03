@@ -4,12 +4,3 @@ email: doozi316@gmail.com
 github: https://github.com/doozi316
 favicon: 'favicon.png'
 date_format: '%Y-%m-%d'
-
-plugins:
-    - jekyll-toc
-
-defaults:
-    - scope:
-          path: '_posts'
-      values:
-          toc: true
