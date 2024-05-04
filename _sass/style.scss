@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
+$header-height: 56px;
+
 html,
 body {
     width: 100%;
@@ -119,13 +121,14 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid rgb(120, 148, 86);
-    padding: 20px 40px;
+    padding: 0 40px;
     margin: 0;
     font-weight: bolder;
     font-family: '돋움';
     background: linear-gradient(rgb(172, 219, 137), rgb(231, 247, 207));
     box-shadow: inset 0px 2px rgb(221, 240, 195);
     font-size: 12pt;
+    min-height: $header-height;
 
     a {
         text-decoration-line: none;
