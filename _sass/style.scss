@@ -68,15 +68,38 @@ td {
     border-collapse: collapse;
     padding: 0.4rem;
 }
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/one-dark.css');
+// @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/cobalt.css');
+// @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css');
 
-script {
-    table,
-    th,
-    td {
-        border: unset !important;
-        border-collapse: unset;
-        padding: unset;
-    }
+.gist * {
+    font-family: '굴림체';
+    font-size: 1rem;
+    background: black !important;
+}
+
+.gist-file {
+    padding: 1rem;
+    border: unset !important;
+    border-radius: 0 !important;
+}
+
+.gist-data {
+    padding: 20x;
+    border: unset !important;
+    border-radius: 0 !important;
+}
+
+.gist-meta {
+    display: none;
+}
+
+.gist-data .pl-s .pl-s1 {
+    color: #a5c261;
+}
+
+.blob-num {
+    display: none;
 }
 
 code {
