@@ -144,7 +144,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid rgb(120, 148, 86);
-    padding: 0 40px;
+    padding: 0 24px;
     margin: 0;
     font-weight: bolder;
     font-family: '돋움';
@@ -162,7 +162,7 @@ header {
         display: flex;
 
         > a {
-            padding-left: 3rem;
+            padding-left: 24px;
         }
     }
 }
