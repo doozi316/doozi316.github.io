@@ -343,6 +343,12 @@ main {
         max-width: 640px;
         margin: 0 auto;
         padding: 4rem 2rem;
+
+        .origin {
+            border-top: 1px solid black;
+            padding: 20px 10px;
+            margin: 50px 0;
+        }
     }
 
     @media screen and (max-width: 1024px) {
