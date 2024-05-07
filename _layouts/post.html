@@ -49,12 +49,18 @@ layout: default
 
             <h1>{{ page.title }}</h1>
 
-            {{ content }}
-
+            {{ content }} {% if page.origins %}
             <details class="origin">
                 <summary>출처</summary>
-                <a href="page.origin">{{ page.origin }}</a>
+                <ul>
+                    {% for origin in page.origins %}
+                    <li>
+                        <a href="origin">{{ origin }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </details>
+            {% endif %}
         </article>
     </div>
 </div>
