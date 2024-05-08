@@ -1,8 +1,7 @@
 <ul>
     <li>{{ category_title }}</li>
     <ul>
-        외않되 {{ post.categories }} {{ category }} {{ site.posts}} {% for post
-        in site.posts %} {% if post.categories contains category %}
+        {% for post in site.posts %} {% if post.categories contains category %}
         <li>
             <a href="{{ post.url | relative_url }}">
                 <span> {{ post.date | | date: site.date_format }} </span>
