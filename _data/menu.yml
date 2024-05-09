@@ -8,6 +8,8 @@ categories:
             url: /category/postgreSQL.html
     - name: AWS
       url: /category/aws.html
+    - name: Linux
+      url: /category/linux.html
     - name: Docker
       url: /category/docker.html
       last: true
