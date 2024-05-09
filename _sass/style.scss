@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: 'GulimChe', 'Apple SD Gothic Neo', Sans-serif;
-    font-size: 1rem;
+    font-size: 12pt;
     line-height: 1.4;
     overflow-wrap: break-word;
 }
@@ -103,6 +103,7 @@ td {
 }
 
 code {
+    min-width: unset;
     padding: 1px 4px 1px 2px;
     color: white;
     background: black;
@@ -276,6 +277,7 @@ main {
     display: flex;
 
     > .nav {
+        flex: 2;
         box-shadow: inset -1px 0px #808080, inset 1px 1px #ffffff,
             inset -1px 0px #808080, inset 1px 1px #dfdfdf;
         width: 20%;
@@ -348,21 +350,29 @@ main {
     }
 
     > .content {
-        width: 80%;
-        max-width: 640px;
-        margin: 0 auto 50px auto;
+        flex: 8;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
         padding: 4rem 2rem;
 
-        .origin {
-            border-top: 1px solid black;
-            padding: 20px 10px;
-            margin: 50px 0;
+        article {
+            max-width: 640px;
+
+            .origin {
+                border-top: 1px solid black;
+                padding: 20px 10px;
+                margin: 50px 0;
+            }
         }
     }
 
     @media screen and (max-width: 1024px) {
         .content {
             flex: 1;
+            position: absolute;
+            right: 0;
+            left: 0;
         }
     }
 }
