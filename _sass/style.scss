@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: '굴림체';
+    font-family: 'GulimChe', 'Apple SD Gothic Neo', Sans-serif;
     font-size: 1rem;
     line-height: 1.4;
     overflow-wrap: break-word;
@@ -73,7 +73,7 @@ td {
 // @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css');
 
 .gist * {
-    font-family: '굴림체';
+    font-family: 'GulimChe', 'Apple SD Gothic Neo', Sans-serif;
     font-size: 1rem;
     background: black !important;
 }
@@ -151,7 +151,7 @@ header {
     padding: 0 24px;
     margin: 0;
     font-weight: bolder;
-    font-family: '돋움';
+    font-family: 'Dotum', 'Apple SD Gothic Neo', Sans-serif;
     background: linear-gradient(rgb(172, 219, 137), rgb(231, 247, 207));
     box-shadow: inset 0px 2px rgb(221, 240, 195);
     font-size: 12pt;
@@ -239,7 +239,7 @@ main {
 }
 
 .category {
-    font-family: '돋움';
+    font-family: 'Dotum', 'Apple SD Gothic Neo', Sans-serif;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -295,7 +295,7 @@ main {
                         rgb(250, 250, 251),
                         rgb(220, 220, 220)
                     );
-                    font-family: '굴림';
+                    font-family: 'Gulim', 'Apple SD Gothic Neo', Sans-serif;
                     font-size: 12px;
                     flex: 1;
                     border: none;
