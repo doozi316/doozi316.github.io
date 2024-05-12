@@ -272,7 +272,7 @@ main {
     top: 57px;
     left: 0;
     right: 0;
-
+    bottom: 0;
     flex: 1;
     display: flex;
 
@@ -343,7 +343,7 @@ main {
         }
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1200px) {
         .nav {
             display: none;
         }
@@ -367,14 +367,14 @@ main {
         }
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1200px) {
         .content {
             flex: 1;
             position: absolute;
             right: 0;
             left: 0;
 
-            article {                
+            article {
                 width: 100%;
             }
         }
