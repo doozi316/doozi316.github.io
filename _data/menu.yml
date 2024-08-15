@@ -12,4 +12,6 @@ categories:
       url: /category/linux.html
     - name: Docker
       url: /category/docker.html
+    - name: Kubernetes
+      url: /category/k8s.html
       last: true
